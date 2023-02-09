@@ -1,5 +1,3 @@
-1) Simple Calculator
-
 import java.util.Scanner;
 class Main
 {
