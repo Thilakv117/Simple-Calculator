@@ -1,0 +1,41 @@
+1) Simple Calculator
+
+import java.util.Scanner;
+class Main
+{
+  public static void main(String args[])
+  {
+    Scanner sc = new Scanner(System.in);
+    System.out.print("Enter the Num1: ");
+    int num1 = sc.nextInt();
+    System.out.print("Enter the Operator: ");
+    char operator = sc.next().charAt(0);
+    System.out.print("Enter the Num2: ");
+    int num2 = sc.nextInt();
+    if(operator == '+')
+    {
+      int Addition = num1 + num2;
+      System.out.println("Addition is: " + Addition );
+    }
+    if(operator == '-')
+    {
+      int Sub = num1 - num2;
+      System.out.println("Subtraction is: " + Sub );
+    }
+    if(operator == '*')
+    {
+      int Multi = num1 * num2;
+      System.out.println("Multiplication is: " + Multi);
+    }
+    if(operator == '/')
+    {
+      int Divi = num1 / num2;
+      System.out.println("Division is: " + Divi );
+    }
+    if(operator == '%')
+    {
+      int per = num1 % num2;
+      System.out.println("Persentage is: " + per);
+    }
+    }
+}
